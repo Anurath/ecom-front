@@ -1,0 +1,14 @@
+.HeroSmallCompCard{
+    width:130px;
+    height:140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HeroSmallCompCard:hover{
+    cursor: pointer;
+}
+.HeroSmallCompCard p{
+    font-weight: 500;
+}
