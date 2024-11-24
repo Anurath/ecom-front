@@ -1,5 +1,34 @@
 .NavBar{
     height: 67px;
     width:100%;
-    background-color:rgb(205, 106, 7);
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.NavBar img:hover{
+    cursor: pointer;
+}
+
+#search{
+    width: 550px;
+    height:40px;
+    background-color:rgb(209, 232, 233);
+    outline:none;
+    border: none;
+}
+
+.cart , .seller , .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.cart i, .seller i , .login i{
+    margin-right: 0.5rem;
+}
+.login,.cart,.seller,.fa-solid:hover{
+    cursor:pointer;
 }

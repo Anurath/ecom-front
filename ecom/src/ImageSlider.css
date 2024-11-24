@@ -1,5 +1,32 @@
-.ImageSlider{
-    height:207px;
-    width:100%;
-    background-color:rgb(66, 224, 66);
+.ImageSlider {
+    margin-top: 1rem;
+    height: 207px;
+    width: 100%;
+    background-image: url('./assets/slider/sliderImg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(66, 224, 66);
+    position: relative;
+    animation: imageSlider 6s ease-in-out infinite;
+}
+
+@keyframes imageSlider {
+    0%{
+        background-image: url('./assets/slider/sliderImg.png');
+    }
+    33%{
+        background-image: url('./assets/slider/sliderImge1.png');
+    }
+    66%{
+        background-image: url('./assets/slider/sliderImg2.png');
+    }
+    100%{
+        background-image: url('./assets/slider/sliderImg3.png');
+    }
+    
+}
+
+.ImageSlider:hover {
+    cursor: pointer;
 }
