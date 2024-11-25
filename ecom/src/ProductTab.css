@@ -10,6 +10,7 @@
 .main{
     background-color:rgb(255, 255, 255);
     margin-top:2rem;
+    width: 100%;
 }
 .title{
     display: flex;
@@ -30,6 +31,16 @@
     }
 }
 
+@media (max-width:455px) {
+    .main{
+        height:524px;
+    }
+}
+@media (max-width:420px) {
+    .main{
+        height:730px;
+    }
+}
 .title i{
     height:6px;
     width:6px;

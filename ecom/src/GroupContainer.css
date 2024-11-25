@@ -1,0 +1,29 @@
+.GroupContainer{
+    width:100%;
+    height: auto;
+    margin-top:15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* @media (max-width:1040px) {
+    .GroupContainer{
+        flex-direction: column;
+    }
+} */
+#herosaree{
+    display:none;
+}
+
+@media (min-width:900px) {
+    #herosaree{
+        display: block;
+    }
+}
+
+#herosaree:hover{
+    cursor: pointer;
+}

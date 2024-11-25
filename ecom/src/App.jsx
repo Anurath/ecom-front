@@ -2,8 +2,7 @@ import NavBar from "./NavBar"
 import ImageSlider from "./ImageSlider"
 import HeroSmallComp from "./HeroSmallComp"
 import ProductTab from "./ProductTab"
-import Productg from "./Productg"
-import GridTab from "./GridTab"
+import GroupContainer from "./GroupContainer"
 function App() {
 
   return (
@@ -12,7 +11,7 @@ function App() {
       <HeroSmallComp />
       <ImageSlider />
       <ProductTab />
-      <GridTab />
+      <GroupContainer/>
     </>
   )
 }

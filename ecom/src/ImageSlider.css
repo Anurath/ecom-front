@@ -13,13 +13,13 @@
 
 @keyframes imageSlider {
     0%{
-        background-image: url('./assets/slider/sliderImg.png');
+        background-image: url('./assets/slider/sliderImg2.png');
     }
     33%{
         background-image: url('./assets/slider/sliderImge1.png');
     }
     66%{
-        background-image: url('./assets/slider/sliderImg2.png');
+        background-image: url('./assets/slider/alia.png');
     }
     100%{
         background-image: url('./assets/slider/sliderImg3.png');
@@ -30,3 +30,5 @@
 .ImageSlider:hover {
     cursor: pointer;
 }
+
+

@@ -1,0 +1,33 @@
+.GroupProduct{
+    height:87%;
+    width:85%;
+    border:1px solid rgb(172, 159, 159);
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+    align-items: center;
+    border-radius:3px;
+    justify-content: space-between;
+    background-color:white;
+}
+.GroupProduct:hover{
+    cursor: pointer;
+}
+
+#groupImg{
+    top:3px;
+    border-radius: 10px;
+    position: relative;
+}
+#groupImg:hover{
+    transform: scale(1.05);
+}
+
+p{
+    line-height:0.5px;
+    font-weight: 400;
+    font-size:17px;
+}
+#special{
+    font-weight:600;
+}
