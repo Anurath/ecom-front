@@ -94,7 +94,7 @@
     }
 }
 
-@media(min-width:320px) and (max-width: 374px) {
+@media(min-width:0px) and (max-width: 374px) {
     .Group {
         height: 505px;
         margin-top:10px;

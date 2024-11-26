@@ -1,0 +1,27 @@
+[
+    {
+        "imgUrl": "./assets/ProductImgs/toy.jpg",
+        "name": "Soft Toys",
+        "tagline": "Upto 70% Off"
+    },
+    {
+        "imgUrl": "./assets/ProductImgs/dryFruit.png",
+        "name": "Dry fruits",
+        "tagline": "Upto 75% Off"
+    },
+    {
+        "imgUrl": "./assets/ProductImgs/coffee.jpg",
+        "name": "Coffee Power",
+        "tagline": "Upto 70% Off"
+    },
+    {
+        "imgUrl": "./assets/ProductImgs/stationary.jpg",
+        "name": "Top Selling",
+        "tagline": "From Rs.49"
+    },
+    {
+        "imgUrl": "./assets/ProductImgs/fashion.jpg",
+        "name": "New Fashion",
+        "tagline": "From Rs.399"
+    }
+]

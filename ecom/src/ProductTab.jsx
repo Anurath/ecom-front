@@ -3,12 +3,12 @@ import Product from "./Product";
 import ProductHead from "./ProductHead";
 
 import './ProductTab.css'
-export default function ProductTab({productInfo}){
+export default function ProductTab({productInfo, tabName}){
     
     return(
         <div className="main">
             <div className="title">
-                <ProductHead />
+                <ProductHead tabName={tabName} />
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div className="ProductTab">

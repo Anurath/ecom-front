@@ -4,7 +4,7 @@ import tshirt2 from './assets/groupImgs/tshirt2.png'
 import tshirt3 from './assets/groupImgs/tshirt3.png'
 import tshirt4 from './assets/groupImgs/tshirt4.png'
 
-import heroSaree from './assets/herosaree.png'
+import hero from './assets/hero.png'
 
 import gift from './assets/groupImgs/gift.png'
 import gift1 from './assets/groupImgs/gift1.png'
@@ -123,7 +123,7 @@ export default function GroupContainer(){
             <Group products={products1} GroupName={GroupName[1]} />
             <Group products={products2} GroupName={GroupName[2]} />
             <Group products={products3} GroupName={GroupName[1]} />
-            <img id='herosaree' src={heroSaree} alt="" />
+            <img id='herosaree' src={hero} alt="" />
         </div>
     )
 }

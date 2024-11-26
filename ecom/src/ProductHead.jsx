@@ -1,7 +1,7 @@
-export default function ProductHead({ProductHead}){
+export default function ProductHead({tabName}){
     return(
         <div className="ProductHead">
-            <h1>Best of Best</h1>
+            <h1> {tabName} </h1>
         </div>
     )
 }
