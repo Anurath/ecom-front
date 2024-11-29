@@ -7,6 +7,7 @@
     justify-content: space-evenly;
     position:fixed;
     top: 0;
+    z-index: 1000;
     left: 0;
 }
 
@@ -14,8 +15,12 @@
     cursor: pointer;
 }
 
+.search{
+    width:40.21%;
+}
+
 #search{
-    width: 550px;
+    width:100%;
     height:40px;
     background-color:rgb(209, 232, 233);
     outline:none;
@@ -34,4 +39,16 @@
 }
 .login,.cart,.seller,.fa-solid:hover{
     cursor:pointer;
+}
+
+@media (max-width:900px) {
+    .search{
+        width:30%;
+    }
+}
+
+@media (max-width:780px) {
+    .seller{
+        display: none;
+    }
 }

@@ -5,8 +5,27 @@
     height:141px;
     width: 99%;
     margin-top: 1rem;
+    flex-wrap:wrap;
     margin-left:0.5rem;
     margin-right:0.5rem;
     background-color:white;
     margin-top:79px;
+}
+
+@media (max-width:1084px) {
+    .HeroSmallComp{
+        height:269px;
+    }
+}
+
+@media (max-width:557px) {
+    .HeroSmallComp{
+        height:409px;
+    }
+}
+
+@media (max-width:427px) {
+    .HeroSmallComp{
+        height:547px;
+    }
 }

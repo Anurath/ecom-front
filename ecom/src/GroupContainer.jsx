@@ -116,13 +116,13 @@ export default function GroupContainer(){
         }
 
     ]
-    let GroupName=["Winter Essentials","Special Gifts","Home Delights"]
+    let GroupName=["Winter Essentials","Special Gifts","Home Delights","Fitness Deal"]
     return(
         <div className="GroupContainer">
             <Group products={products} GroupName={GroupName[0]} />
             <Group products={products1} GroupName={GroupName[1]} />
             <Group products={products2} GroupName={GroupName[2]} />
-            <Group products={products3} GroupName={GroupName[1]} />
+            <Group products={products3} GroupName={GroupName[3]} />
             <img id='herosaree' src={hero} alt="" />
         </div>
     )

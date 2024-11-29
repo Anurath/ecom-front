@@ -4,7 +4,7 @@ export default function NavBar() {
         <div className="NavBar">
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="logo" />
             <div className="search">
-                <label htmlFor="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                {/* <label htmlFor="search"><i class="fa-solid fa-magnifying-glass"></i></label> */}
                 <input type="search" name="search" id='search' placeholder='Search for Products,Brand and More...' />
             </div>
             <div className="login">
