@@ -1,9 +1,10 @@
-.footerItems,p{
+.footerItems p{
     color:white;
     font-size:12px;
 }
 
 .footerItems li{
+    color: white;
     list-style: none;
     cursor: pointer;
 }
@@ -11,10 +12,6 @@
 
 .footerItems{
     margin-top: 12px;
-}
-
-p{
-    color: #878787;
 }
 
 @media (max-width:627px) {

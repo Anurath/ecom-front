@@ -1,6 +1,5 @@
-import './FooterComponant.css'
+import './FooterComponants.css';
 export default function FooterComponant({footerItemHeader,footerData}){
-    console.log(footerData);
     return(
         <>
         <div className="footerItems">
