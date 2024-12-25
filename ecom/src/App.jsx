@@ -33,131 +33,161 @@ import air4 from './assets/style/air4.png';
 
 function App() {
 
-  let productInfo=[
-    {
-        imgUrl:toy,
-        name:"Soft Toys",
-        tagline:"Upto 70% Off"
-    },
-    {
-        imgUrl:dryFruit,
-        name:"Dry fruits",
-        tagline:"Upto 75% Off"
-    },
-    {
-        imgUrl:coffee,
-        name:"Coffee Power",
-        tagline:"Upto 70% Off"
-    },
-    {
-        imgUrl:stationary,
-        name:"Top Selling",
-        tagline:"From Rs.49"
-    },
-    {
-        imgUrl:fashion,
-        name:"New Fashion",
-        tagline:"From Rs.399"
-    }
-]
+    let productInfo = [
+        {
+            imgUrl: toy,
+            name: "Soft Toys",
+            tagline: "Upto 70% Off"
+        },
+        {
+            imgUrl: dryFruit,
+            name: "Dry fruits",
+            tagline: "Upto 75% Off"
+        },
+        {
+            imgUrl: coffee,
+            name: "Coffee Power",
+            tagline: "Upto 70% Off"
+        },
+        {
+            imgUrl: stationary,
+            name: "Top Selling",
+            tagline: "From Rs.49"
+        },
+        {
+            imgUrl: fashion,
+            name: "New Fashion",
+            tagline: "From Rs.399"
+        }
+    ]
 
-let productInfo1=[
-  {
-      imgUrl:style6,
-      name:"Saree",
-      tagline:"Upto 20% Off"
-  },
-  {
-      imgUrl:style7,
-      name:"Saree",
-      tagline:"Upto Rs.900 Off"
-  },
-  {
-      imgUrl:style3,
-      name:"Flared Kurta",
-      tagline:"Upto 7% Off"
-  },
-  {
-      imgUrl:style4,
-      name:"Gown Kurta",
-      tagline:"Upto 13% OFF"
-  },
-  {
-      imgUrl:style5,
-      name:"Straight Kurta ",
-      tagline:"From Rs.999"
-  }
-]
+    let productInfo1 = [
+        {
+            imgUrl: style6,
+            name: "Saree",
+            tagline: "Upto 20% Off"
+        },
+        {
+            imgUrl: style7,
+            name: "Saree",
+            tagline: "Upto Rs.900 Off"
+        },
+        {
+            imgUrl: style3,
+            name: "Flared Kurta",
+            tagline: "Upto 7% Off"
+        },
+        {
+            imgUrl: style4,
+            name: "Gown Kurta",
+            tagline: "Upto 13% OFF"
+        },
+        {
+            imgUrl: style5,
+            name: "Straight Kurta ",
+            tagline: "From Rs.999"
+        }
+    ]
 
-let productInfo2=[
-    {
-        imgUrl:shoes,
-        name:"Bata",
-        tagline:"Upto 20% Off"
-    },
-    {
-        imgUrl:shoes1,
-        name:"Killer",
-        tagline:"Upto Rs.400 Off"
-    },
-    {
-        imgUrl:shoes2,
-        name:"Height",
-        tagline:"Upto 7% Off"
-    },
-    {
-        imgUrl:shoes3,
-        name:"Bata",
-        tagline:"Upto 10% OFF"
-    },
-    {
-        imgUrl:shoes4,
-        name:"Lopher",
-        tagline:"From Rs.999"
-    }
-  ]
+    let productInfo2 = [
+        {
+            imgUrl: shoes,
+            name: "Bata",
+            tagline: "Upto 20% Off"
+        },
+        {
+            imgUrl: shoes1,
+            name: "Killer",
+            tagline: "Upto Rs.400 Off"
+        },
+        {
+            imgUrl: shoes2,
+            name: "Height",
+            tagline: "Upto 7% Off"
+        },
+        {
+            imgUrl: shoes3,
+            name: "Bata",
+            tagline: "Upto 10% OFF"
+        },
+        {
+            imgUrl: shoes4,
+            name: "Lopher",
+            tagline: "From Rs.999"
+        }
+    ]
 
-  let productInfo3=[
-    {
-        imgUrl:air,
-        name:"Trigger",
-        tagline:"Upto 10% Off"
-    },
-    {
-        imgUrl:air1,
-        name:"realme Buds",
-        tagline:"Upto Rs.400 Off"
-    },
-    {
-        imgUrl:air2,
-        name:"Brolan",
-        tagline:"Upto77% Off"
-    },
-    {
-        imgUrl:air3,
-        name:"Noise Buds",
-        tagline:"Upto 10% OFF"
-    },
-    {
-        imgUrl:air4,
-        name:"Trigger",
-        tagline:"From Rs.999"
-    }
-  ]
-let tabName=["Best of Best","Top Deals","Best of Shoes","Special Deals"]
-  return (
-    <>
-      <NavBar />
-      <HeroSmallComp />
-      <ImageSlider />
-      <ProductTab productInfo={productInfo} tabName={tabName[0]} />
-      <GroupContainer/>
-      <ProductTab productInfo={productInfo1} tabName={tabName[1]} />
-      <ProductTab productInfo={productInfo2} tabName={tabName[2]} />
-      <ProductTab productInfo={productInfo3} tabName={tabName[3]} />
-      <Footer />
-    </>
-  )
+    let productInfo3 = [
+        {
+            imgUrl: air,
+            name: "Trigger",
+            tagline: "Upto 10% Off"
+        },
+        {
+            imgUrl: air1,
+            name: "realme Buds",
+            tagline: "Upto Rs.400 Off"
+        },
+        {
+            imgUrl: air2,
+            name: "Brolan",
+            tagline: "Upto77% Off"
+        },
+        {
+            imgUrl: air3,
+            name: "Noise Buds",
+            tagline: "Upto 10% OFF"
+        },
+        {
+            imgUrl: air4,
+            name: "Trigger",
+            tagline: "From Rs.999"
+        }
+    ]
+
+    let footerData = [
+        {
+            footerItemHeader: "ABOUT",
+            footerItems: ["About", "Careers", "Contact Us", "Flipkart Stories", "Press", "Corporate"]
+        },
+        {
+            footerItemHeader: "GROUP COMPANIES",
+            footerItems: ["Myntra", "ClearTrip", "Shopsy"]
+        },
+        {
+            footerItemHeader: "HELP",
+            footerItems: ["Payments", "shippings", "Cancellation"]
+        },
+        {
+            footerItemHeader: "CUSTOMER POLICY",
+            footerItems: ["Security", "Privacy", "Sitemap", "Redressal", "EPR Compliance"]
+        },
+        {
+            footerItemHeader: "Mail Us:",
+            footerItems: ["Flipkart Internet Private Limited,", "Buildings Alyssa, Begonia &", "Clove Embassy Tech Village,", "Outer Ring Road, Devarabeesanahalli Village,", "EPR  Bengaluru, 560103,", "Karnataka, India"]
+        },
+        {
+            footerItemHeader: " Registered Office Address:",
+            footerItems: ["Flipkart Internet Private Limited,", " Buildings Alyssa, Begonia &", "Clove Embassy Tech Village, ", "Outer Ring Road, Devarabeesanahalli Village,", "Karnataka, India", "CIN : U51109KA2012PTC066107"," Telephone: 044-45614700/044-67415800"]
+        },
+
+
+    ]
+
+    let tabName = ["Best of Best", "Top Deals", "Best of Shoes", "Special Deals"]
+    return (
+        <>
+            <NavBar />
+            <HeroSmallComp />
+            <ImageSlider />
+            <ProductTab productInfo={productInfo} tabName={tabName[0]} />
+            <GroupContainer />
+            <ProductTab productInfo={productInfo1} tabName={tabName[1]} />
+            <ProductTab productInfo={productInfo2} tabName={tabName[2]} />
+            <ProductTab productInfo={productInfo3} tabName={tabName[3]} />
+            <Footer footerData={footerData} />
+        </>
+    )
 }
 
 export default App
