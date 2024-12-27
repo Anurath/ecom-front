@@ -10,7 +10,7 @@
 
 .userLogin{
     height:455px;
-    width:444px;
+    width:352px;
     border:1px solid black;
     display: flex;
     flex-direction: column;
@@ -21,15 +21,16 @@
 }
 .sideLogin{
     height:449px;
-    width:234px;
+    width:209px;
     background-color: #2874f0;
     display: flex;
+    justify-content:space-between;
     flex-direction: column;
     padding: 40px 33px;
 }
 
 #inp{
-    width:434px;
+    width:370px;
     height:38px;
     border: none;
     border-bottom:1px solid black;
@@ -44,7 +45,7 @@
 
 button{
     background: #fb641b;
-    width:442px;
+    width:379px;
     height:38px;
     border:none;
 }
@@ -52,4 +53,67 @@ button{
 .resister{
     font-size: 12px;
     font-weight: 500;
+}
+
+#Cloud{
+    width:50px;
+}
+#Cloud1{
+    width:70px;
+}
+
+#Laptop{
+    width:127px;
+    z-index:1000;
+    position: relative;
+}
+
+#Bag{
+    width:40px;
+    position: relative;
+    left:-17px;
+}
+
+
+#Gift{
+    width:40px;
+    position: relative;
+    left:20px;
+}
+
+@media (max-width:760px) {
+    .loginInfo h4{
+        font-size:12px;
+    }
+    .sideLogin{
+        width:17%;
+        height:382px;
+    }
+    .userLogin{
+        width:27%;
+        height:388px;
+    }
+    button{
+        width:100%;
+    }
+    #inp{
+        width:100%;
+    }
+}
+
+form h5{
+    font-weight:100;
+}
+
+#FlipkartImage{
+    width:100%;
+}
+
+@media (max-width:550px) {
+    .sideLogin{
+        display: none;
+    }
+    .userLogin{
+        width:48%;
+    }
 }
