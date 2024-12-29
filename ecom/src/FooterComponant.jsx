@@ -6,7 +6,7 @@ export default function FooterComponant({footerItemHeader,footerData}){
         <p>{footerItemHeader}</p>
             {
                 footerData.map((item)=>(
-                    <li> {item} </li>
+                    <li key={item.id}> {item} </li>
                 ))
             }
         </div>

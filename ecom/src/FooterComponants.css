@@ -22,3 +22,16 @@
         cursor: pointer;
     }
 }
+
+@media (max-width:1210px) {
+    .footerItems li{
+        font-size:12px;
+    }
+}
+
+@media (max-width:301px) {
+    .footerItems li{
+        white-space: normal;
+        word-wrap: break-word;
+    }
+}

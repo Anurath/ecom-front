@@ -50,3 +50,9 @@
     border-radius:50%;
     background-color:blue;
 }
+
+.NavigateNextIcon{
+    cursor: pointer;
+    background-color: blue;
+    border-radius:50%;
+}

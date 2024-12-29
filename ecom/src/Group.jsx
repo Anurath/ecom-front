@@ -11,4 +11,4 @@ export default function Group({products,GroupName}){
             }
         </div>
     )
-}
+} 

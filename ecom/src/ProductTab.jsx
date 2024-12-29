@@ -1,5 +1,5 @@
 import Product from "./Product";
-
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ProductHead from "./ProductHead";
 
 import './ProductTab.css'
@@ -9,7 +9,7 @@ export default function ProductTab({productInfo, tabName}){
         <div className="main">
             <div className="title">
                 <ProductHead tabName={tabName} />
-                <i class="fa-solid fa-chevron-right"></i>
+                <NavigateNextIcon className="NavigateNextIcon" />
             </div>
             <div className="ProductTab">
             <Product productInfo={productInfo} />
