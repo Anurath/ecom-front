@@ -14,6 +14,7 @@ export default function NavBar() {
             </div>
             <div className="login">
                 <AccountCircleIcon />
+                
                 <Link to='/login'><p>Login</p></Link>
             </div>
             <div className="cart">

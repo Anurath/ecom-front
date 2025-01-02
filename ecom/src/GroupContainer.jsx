@@ -27,22 +27,26 @@ export default function GroupContainer(){
         {
             imgUrl:tshirt1,
             name:"Casual Jacket",
-            special:"50%off"
+            tagline:"50%off",
+            price:300
         },
         {
             imgUrl:tshirt2,
             name:"Sweater",
-            special:"80%off"
+            tagline:"80%off",
+            price:300
         },
         {
             imgUrl:tshirt3,
             name:"Waterproof Jacker",
-            special:"30%off"
+            tagline:"30%off",
+            price:300
         },
         {
             imgUrl:tshirt4,
             name:"Men's Mufflers",
-            special:"10%off"
+            tagline:"10%off",
+            price:300
         }
     ]
 
@@ -50,22 +54,26 @@ export default function GroupContainer(){
         {
             imgUrl:gift,
             name:"Table Lamps",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:gift1,
             name:"two",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:gift2,
             name:"three",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:gift4,
             name:"four",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         }
 
     ]
@@ -73,22 +81,26 @@ export default function GroupContainer(){
         {
             imgUrl:home,
             name:"Bath towels",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:home1,
             name:"Blankets",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:home2,
             name:"Blankets",
-            special:"Min. 40% Off"
+            tagline:"Min. 40% Off",
+            price:300
         },
         {
             imgUrl:home3,
             name:"Bed",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         }
 
     ]
@@ -97,26 +109,30 @@ export default function GroupContainer(){
         {
             imgUrl:sport,
             name:"Bath towels",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:sport1,
             name:"Blankets",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         },
         {
             imgUrl:sport2,
             name:"Blankets",
-            special:"Min. 40% Off"
+            tagline:"Min. 40% Off",
+            price:300
         },
         {
             imgUrl:sport3,
             name:"Bed",
-            special:"Min. 50% Off"
+            tagline:"Min. 50% Off",
+            price:300
         }
 
     ]
-    let GroupName=["Winter Essentials","Special Gifts","Home Delights","Fitness Deal"]
+    let GroupName=["Winter Essentials","tagline Gifts","Home Delights","Fitness Deal"]
     return(
         <div className="GroupContainer">
             <Group products={products} GroupName={GroupName[0]} />

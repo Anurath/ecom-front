@@ -1,5 +1,12 @@
 import './Product.css'
+
+import { CartContext } from './Context/CartContext';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { useContext } from 'react';
 export default function Product({ productInfo }) {
+
+  const {handleAddCart}=useContext(CartContext);
+
     return (
         <>
             {
@@ -9,6 +16,7 @@ export default function Product({ productInfo }) {
                         <div className="info">
                             <p> {product.name} </p>
                             <h4> {product.tagline} </h4>
+                            <button className='addToCartButton' onClick={()=>handleAddCart(product)}> <AddShoppingCartIcon /> </button>
                         </div>
                     </div>
                 ))

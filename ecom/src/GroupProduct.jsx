@@ -6,7 +6,7 @@ export default function GroupProduct({product}) {
             <img id='groupImg' src={product.imgUrl} style={{ width: "99%" }}  alt="" />
             <div id='infoData'>
                 <p> {product.name} </p>
-                <p id='special' style={{ color: "green"}}> {product.special} </p>
+                <p id='special' style={{ color: "green"}}> {product.tagline} </p>
             </div>
         </div>
     )

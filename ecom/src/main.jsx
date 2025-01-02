@@ -9,6 +9,8 @@ import Footer from './Footer.jsx'
 import BecomeSeller from './navBarPages/BecomeSeller.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+import CartProvider from './Context/CartContext.jsx'
+
 let footerData = [
   {
       footerItemHeader: "ABOUT",
@@ -59,6 +61,8 @@ const router=createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+     <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>,
 )
