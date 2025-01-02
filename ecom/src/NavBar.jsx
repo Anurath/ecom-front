@@ -2,11 +2,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import SideBar from './navBarPages/SideBar';
 import './NavBar.css'
 import { Link } from 'react-router-dom'
 export default function NavBar() {
     return (
         <div className="NavBar">
+            <SideBar />
             <Link to='/'><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="logo" /></Link>
             <div className="search">
                 {/* <label htmlFor="search"><i class="fa-solid fa-magnifying-glass"></i></label> */}

@@ -58,9 +58,11 @@
 
 @media (max-width:690px) {
     .Carts {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 110px;
-        justify-content: center;
+        justify-items: center;
+    align-items: center; 
     }
     .singleCart{
         width: 90%;

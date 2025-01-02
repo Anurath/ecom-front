@@ -1,0 +1,96 @@
+.SideBar {
+    top: 0px;
+    z-index: 2;
+    left: -267px;
+    position: absolute;
+    width: 240px;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:3px 3px 3px 3px rgb(120, 117, 117);
+
+}
+
+.SideBarCloseBtn {
+    position: absolute;
+    right: -7px;
+    width: 0px;
+    background-color: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.Visible {
+    left: 0px;
+}
+
+.Open {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    width: 50px;
+    display:none;
+}
+
+@media (max-width:780px) {
+    .Open{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.SideBarBox {
+    height: 35px;
+    border-bottom:1px solid rgb(63, 62, 62);
+}
+
+#LoginAndSign{
+    background-color: #2874f0;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+#imgLogo{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+}
+.LoginAndSign{
+    text-decoration:none;
+    color: white;
+}
+.sideBarCart{
+    text-decoration: none;
+    color: black;
+}
+
+.SideBarBox1{
+    height:72px;
+    border-bottom:1px solid rgb(63, 62, 62);
+}
+
+.SuperCoin{
+    margin-left:3px;
+    display:flex;
+    align-items: center;
+    p{
+        font-size:15px;
+        cursor: pointer;
+        margin-left:3px;
+    }
+}
+
+.SideBarBox2{
+    height:195px;
+    border-bottom:1px solid rgb(63, 62, 62);
+}
+.SideBarBox3{
+    height:150px;
+}
+
+.sideBarIcon{
+    opacity:0.5;
+}

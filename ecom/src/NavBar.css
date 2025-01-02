@@ -1,5 +1,6 @@
 .NavBar{
     height: 67px;
+    position: relative;
     width:100%;
     background-color: white;
     display:flex;
@@ -54,4 +55,10 @@
 }
 .NavBarLink{
     text-decoration: none;
+}
+
+@media (max-width:530px) {
+    .cart{
+        display: none;
+    }
 }
