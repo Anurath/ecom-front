@@ -15,15 +15,15 @@ export default function NavBar() {
             <div className="login">
                 <AccountCircleIcon />
                 
-                <Link to='/login'><p>Login</p></Link>
+                <Link className='NavBarLink' to='/login'><p>Login</p></Link>
             </div>
             <div className="cart">
                 <ShoppingCartIcon />
-                <Link to='/cart'><p>Cart</p></Link>
+                <Link className='NavBarLink' to='/cart'><p>Cart</p></Link>
             </div>
             <div className="seller">
                 <CardGiftcardIcon />
-                <Link to='/becomeseller'><p>Become a Seller</p></Link>
+                <Link className='NavBarLink' to='/becomeseller'><p>Become a Seller</p></Link>
             </div>
 
             <MoreVertIcon />

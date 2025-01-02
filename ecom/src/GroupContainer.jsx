@@ -27,26 +27,26 @@ export default function GroupContainer(){
         {
             imgUrl:tshirt1,
             name:"Casual Jacket",
-            tagline:"50%off",
-            price:300
+            tagline:50,
+            price:499
         },
         {
             imgUrl:tshirt2,
             name:"Sweater",
-            tagline:"80%off",
-            price:300
+            tagline:80,
+            price:1200
         },
         {
             imgUrl:tshirt3,
             name:"Waterproof Jacker",
-            tagline:"30%off",
-            price:300
+            tagline:30,
+            price:701
         },
         {
             imgUrl:tshirt4,
             name:"Men's Mufflers",
-            tagline:"10%off",
-            price:300
+            tagline:10,
+            price:599
         }
     ]
 
@@ -54,26 +54,26 @@ export default function GroupContainer(){
         {
             imgUrl:gift,
             name:"Table Lamps",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:20,
+            price:500
         },
         {
             imgUrl:gift1,
             name:"two",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:50,
+            price:408
         },
         {
             imgUrl:gift2,
             name:"three",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:50,
+            price:699
         },
         {
             imgUrl:gift4,
             name:"four",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:40,
+            price:259
         }
 
     ]
@@ -81,26 +81,26 @@ export default function GroupContainer(){
         {
             imgUrl:home,
             name:"Bath towels",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:21,
+            price:536
         },
         {
             imgUrl:home1,
             name:"Blankets",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:15,
+            price:842
         },
         {
             imgUrl:home2,
             name:"Blankets",
-            tagline:"Min. 40% Off",
-            price:300
+            tagline:34,
+            price:485
         },
         {
             imgUrl:home3,
             name:"Bed",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:54,
+            price:376
         }
 
     ]
@@ -109,26 +109,26 @@ export default function GroupContainer(){
         {
             imgUrl:sport,
             name:"Bath towels",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:52,
+            price:539
         },
         {
             imgUrl:sport1,
             name:"Blankets",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:7,
+            price:453
         },
         {
             imgUrl:sport2,
             name:"Blankets",
-            tagline:"Min. 40% Off",
-            price:300
+            tagline:25,
+            price:370
         },
         {
             imgUrl:sport3,
             name:"Bed",
-            tagline:"Min. 50% Off",
-            price:300
+            tagline:47,
+            price:1205
         }
 
     ]

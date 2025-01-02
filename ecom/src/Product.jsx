@@ -15,7 +15,7 @@ export default function Product({ productInfo }) {
                         <img src={product.imgUrl} height={150} width={150} alt="" />
                         <div className="info">
                             <p> {product.name} </p>
-                            <h4> {product.tagline} </h4>
+                            <h4> Upto {product.tagline}% Off</h4>
                             <button className='addToCartButton' onClick={()=>handleAddCart(product)}> <AddShoppingCartIcon /> </button>
                         </div>
                     </div>
@@ -23,4 +23,4 @@ export default function Product({ productInfo }) {
             }
         </>
     )
-}
+} 

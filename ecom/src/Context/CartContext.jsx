@@ -59,7 +59,7 @@ export default function CartProvider({ children }) {
         {
             imgUrl: air3,
             name: "Noise Buds",
-            tagline: "Upto 10% OFF",
+            tagline:10,
             price:300
         },
     ])
@@ -79,8 +79,32 @@ export default function CartProvider({ children }) {
         let newCarts=cart.filter((_,i)=>i!=index);
         setCart(newCarts);
     }
+
+    let handleTotalPrice=()=>{
+        let sum=0;
+        let i=0;
+        while(i<cart.length){
+            sum=sum+cart[i].price;;
+            i++;
+        }
+        return sum;
+    }
+    let totalAmount=handleTotalPrice();
+
+    let handleDiscount=()=>{
+        let discount=0;
+        let i=0;
+        let save=0;
+        while(i<cart.length){
+            save=save+((cart[i].price*100)/(100-cart[i].tagline)-cart[i].price);
+            i++;
+        }
+        return save;
+    }
+    let totalSave=Math.floor(handleDiscount());
+
     return (
-        <CartContext.Provider value={{ cart, handleAddCart, handleRemoveCart }} > 
+        <CartContext.Provider value={{ cart, handleAddCart, handleRemoveCart,totalAmount,totalSave }} > 
             {children} 
         </CartContext.Provider>
     )

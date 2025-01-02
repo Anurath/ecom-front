@@ -1,26 +1,69 @@
-.Carts{
-    height: 100vh;
-    width:100vw;
-    margin-top:67px;
+.Carts {
+    height: auto;
+    width: 100vw;
+    margin-top: 67px;
+    justify-content: center;
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 110px;
 }
 
-.singleCart{
+.singleCart {
     display: flex;
-    height:100px;
-    width:94%;
-    border:1px solid black;
-    margin-bottom:2px;
-    border-radius:5px;
+    height: 100px;
+    width: 94%;
+    border: 1px solid black;
+    margin-bottom: 2px;
+    border-radius: 5px;
     align-items: center;
     justify-content: space-between;
-    padding:3px;
+    padding: 3px;
     background-color: white;
 }
-.cartRemoveButton{
-    width:35px;
+
+.cartRemoveButton,
+.likebtn {
+    width: 35px;
     background-color: #fff;
     cursor: pointer;
+}
+
+.TotalAmount {
+    margin-top: 3px;
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(247, 247, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeOrderBtn {
+    background: #fb641b;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.save {
+    color: green;
+    margin-left: 10px;
+}
+
+.totalAmount {
+    margin-left: 10px;
+}
+
+@media (max-width:690px) {
+    .Carts {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 110px;
+        justify-content: center;
+    }
+    .singleCart{
+        width: 90%;
+    }
+
 }

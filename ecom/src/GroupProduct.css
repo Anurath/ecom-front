@@ -1,4 +1,5 @@
 .GroupProduct{
+    position: relative;
     height:87%;
     width:85%;
     border:1px solid rgb(172, 159, 159);
@@ -30,4 +31,23 @@ p{
 }
 #special{
     font-weight:600;
+}
+.addToCartGroupBtn{
+    position: absolute;
+    background-color: #fff;
+    width:32px;
+    height:25px;
+    bottom:-25px;
+    right:-25px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.GroupProduct:hover{
+    .addToCartGroupBtn{
+        display: block;
+        bottom:17px;
+        right:17px;
+    }
 }

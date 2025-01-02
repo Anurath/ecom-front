@@ -37,32 +37,32 @@ function App() {
         {
             imgUrl: toy,
             name: "Soft Toys",
-            tagline: "Upto 70% Off",
-            price:300
+            tagline:70,
+            price:400
         },
         {
             imgUrl: dryFruit,
             name: "Dry fruits",
-            tagline: "Upto 75% Off",
-            price:300
+            tagline:75,
+            price:365
         },
         {
             imgUrl: coffee,
             name: "Coffee Power",
-            tagline: "Upto 70% Off",
-            price:300
+            tagline:70,
+            price:560
         },
         {
             imgUrl: stationary,
             name: "Top Selling",
-            tagline: "From Rs.49",
-            price:300
+            tagline:49,
+            price:670
         },
         {
             imgUrl: fashion,
             name: "New Fashion",
-            tagline: "From Rs.399",
-            price:300
+            tagline:39,
+            price:200
         }
     ]
 
@@ -70,32 +70,32 @@ function App() {
         {
             imgUrl: style6,
             name: "Saree",
-            tagline: "Upto 20% Off",
-            price:300
+            tagline:20,
+            price:809
         },
         {
             imgUrl: style7,
             name: "Saree",
-            tagline: "Upto Rs.900 Off",
-            price:300
+            tagline:90,
+            price:890
         },
         {
             imgUrl: style3,
             name: "Flared Kurta",
-            tagline: "Upto 7% Off",
-            price:300
+            tagline:7,
+            price:780
         },
         {
             imgUrl: style4,
             name: "Gown Kurta",
-            tagline: "Upto 13% OFF",
-            price:300
+            tagline:13,
+            price:512
         },
         {
             imgUrl: style5,
             name: "Straight Kurta ",
-            tagline: "From Rs.999",
-            price:300
+            tagline:12,
+            price:1250
         }
     ]
 
@@ -103,32 +103,32 @@ function App() {
         {
             imgUrl: shoes,
             name: "Bata",
-            tagline: "Upto 20% Off",
-            price:300
+            tagline: 19,
+            price:653
         },
         {
             imgUrl: shoes1,
             name: "Killer",
-            tagline: "Upto Rs.400 Off",
-            price:300
+            tagline: 25,
+            price:1900
         },
         {
             imgUrl: shoes2,
             name: "Height",
-            tagline: "Upto 7% Off",
-            price:300
+            tagline:35,
+            price:1200
         },
         {
             imgUrl: shoes3,
             name: "Bata",
-            tagline: "Upto 10% OFF",
-            price:300
+            tagline:45,
+            price:890
         },
         {
             imgUrl: shoes4,
             name: "Lopher",
-            tagline: "From Rs.999",
-            price:300
+            tagline:22,
+            price:760
         }
     ]
 
@@ -136,32 +136,32 @@ function App() {
         {
             imgUrl: air,
             name: "Trigger",
-            tagline: "Upto 10% Off",
-            price:300
+            tagline:10,
+            price:670
         },
         {
             imgUrl: air1,
             name: "realme Buds",
-            tagline: "Upto Rs.400 Off",
-            price:300
+            tagline:40,
+            price:980
         },
         {
             imgUrl: air2,
             name: "Brolan",
-            tagline: "Upto77% Off",
-            price:300
+            tagline:77,
+            price:450
         },
         {
             imgUrl: air3,
             name: "Noise Buds",
-            tagline: "Upto 10% OFF",
-            price:300
+            tagline:10,
+            price:670
         },
         {
             imgUrl: air4,
             name: "Trigger",
-            tagline: "From Rs.999",
-            price:300
+            tagline:30,
+            price:640
         }
     ]
 
@@ -199,7 +199,7 @@ function App() {
 
 
     ]
-
+ 
     let tabName = ["Best of Best", "Top Deals", "Best of Shoes", "Special Deals"]
     return (
         <>
