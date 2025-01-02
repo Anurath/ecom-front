@@ -28,7 +28,7 @@ export default function NavBar() {
                 <Link className='NavBarLink' to='/becomeseller'><p>Become a Seller</p></Link>
             </div>
 
-            <MoreVertIcon />
+            <MoreVertIcon className='moreVertIcon' />
 
         </div> 
     )

@@ -23,7 +23,7 @@
 #search{
     width:100%;
     height:40px;
-    background-color:rgb(209, 232, 233);
+    background-color: transparent;
     outline:none;
     border: none;
 }
@@ -55,10 +55,15 @@
 }
 .NavBarLink{
     text-decoration: none;
+    color:black;
 }
 
 @media (max-width:530px) {
     .cart{
         display: none;
     }
+}
+
+.moreVertIcon{
+    cursor: pointer;
 }
