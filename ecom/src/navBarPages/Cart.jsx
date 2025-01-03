@@ -17,10 +17,13 @@ export default function Cart() {
                         <div key={index} className="singleCart">
                             <img src={cart.imgUrl} height={100} width={100} alt="imageMissing" />
                             <h3> {cart.name} </h3>
-                            <h4> &#8377; {cart.price} </h4>
+                            <div className='priceBox'>
+                            <h3 className='DiscountPrice'>&#8377;{cart.price} </h3>
+                            <h4 className='OriginalPrice'>&#8377;{Math.floor([(cart.price)/(100-cart.tagline)]*100)} </h4>
+                            <h4 className='DiscountPerc'> {cart.tagline}% off </h4>
+                            </div>
                             <div className='CartIcons'>
                                 <button className='cartRemoveButton' onClick={() => handleRemoveCart(index)}><DeleteIcon /></button>
-                                <FavoriteBorderIcon />
                             </div>
                         </div>
                     ))

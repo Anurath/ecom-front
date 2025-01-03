@@ -26,6 +26,7 @@
     width: 35px;
     background-color: #fff;
     cursor: pointer;
+    margin-right:10px;
 }
 
 .TotalAmount {
@@ -80,4 +81,20 @@
         text-decoration:line-through;
         opacity:0.8;
     }
+}
+.priceBox{
+    display: flex;
+    align-items:center;
+    justify-self: center;
+}
+
+.OriginalPrice{
+    margin-left:5px;
+    text-decoration: line-through;
+    opacity:0.5;
+}
+
+.DiscountPerc{
+    margin-left:3px;
+    color:green;
 }

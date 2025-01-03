@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import './FooterComponants.css';
 export default function FooterComponant({footerItemHeader,footerData}){
     return(
@@ -6,7 +7,7 @@ export default function FooterComponant({footerItemHeader,footerData}){
         <p>{footerItemHeader}</p>
             {
                 footerData.map((item)=>(
-                    <li key={item.id}> {item} </li>
+                    <li key={nanoid()}> {item} </li>
                 ))
             }
         </div>
