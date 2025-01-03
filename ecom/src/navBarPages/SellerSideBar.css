@@ -1,0 +1,69 @@
+.SellerSideBar{
+    height:100vh;
+    width:254px;
+    background-color:white;
+    z-index:3;
+    position: absolute;
+    top:0px;
+    right:-254px;
+
+}
+
+.VisibleSellerSideBar{
+    right:0px;
+    transition:0.4s;
+}
+
+.sellerOpenSideBar{
+    display: none;
+}
+
+@media (max-width:1021px) {
+    .sellerOpenSideBar{
+        margin-left:10px;
+        display: block;
+        background-color: white;
+        border: none;
+        width: auto;
+        padding: 0;
+        height:auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.sellerSideBarItems{
+    height:50px;
+    width:100%;
+    border-bottom:1px solid rgb(217, 212, 212);
+    display: flex;
+    align-items: center;
+    p{
+        margin-left:8px;
+        cursor: pointer;
+    }
+}
+
+.sellerCloseSideBar{
+    border: none;
+    width: auto;
+    padding: 0;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.logoItem{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    img{
+        margin-left:3px;
+    }
+}

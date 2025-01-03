@@ -24,6 +24,7 @@
 
 .Visible {
     left: 0px;
+    transition:0.3s;
 }
 
 .Open {

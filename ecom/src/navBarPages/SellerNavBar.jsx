@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import SellerSideBar from './sellerSideBar'
 import sellerLogo from '../assets/seller/sellerLogo.svg'
 import './SellerNavBar.css'
 export default function SellerNavBar() {
@@ -43,7 +44,7 @@ export default function SellerNavBar() {
                         <p>Seller Blogs</p>
                     </div>
                 </div>
-                <div>
+                <div className='ShopsyMain'>
                     <p className='NavHeader Shopsy'>Shopsy</p>
                 </div>
             </div>
@@ -51,6 +52,7 @@ export default function SellerNavBar() {
                 <div className='sellerLogin'><button> <Link id='SellerLoginLink' to="/login" >Login</Link> </button></div>
                 <div className='startSelling'><button>Start Selling</button></div>
             </div>
+            <SellerSideBar />
         </div>
     )
 }

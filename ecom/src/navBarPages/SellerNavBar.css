@@ -5,6 +5,13 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    top:0px;
+    left:0px;
+    z-index:9999;
+}
+
+.sellerLogo{
+    margin-top:100px;
 }
 
 .sellerFirstDiv {
@@ -172,7 +179,7 @@
     align-items: center;
 }
 
-@media (max-width:1050px) {
+/* @media (max-width:1050px) {
     .NavHeader{
         font-size:12px;
         cursor: pointer;
@@ -191,6 +198,17 @@
         width:80%;
     }
     .ItemElement3{
+        display: none;
+    }
+} */
+
+.NavHeader:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+@media (max-width:1021px) {
+    .ItemElement,.ItemElement1,.ItemElement2,.ItemElement3,.ShopsyMain{
         display: none;
     }
 }

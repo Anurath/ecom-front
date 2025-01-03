@@ -29,6 +29,8 @@
 
 .image-container{
     position: relative;
+    margin-top:82px;
+
 }
 .text-overlay{
     position: absolute;
