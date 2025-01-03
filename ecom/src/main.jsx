@@ -55,7 +55,7 @@ const router=createBrowserRouter([
   },
   {
     path:'/becomeseller',
-    element:<><NavBar /><BecomeSeller /> <Footer footerData={footerData} /> </>
+    element:<><BecomeSeller /> <Footer footerData={footerData} /> </>
   },
 ])
 

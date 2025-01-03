@@ -6,7 +6,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './Cart.css';
 export default function Cart() {
-    const { cart, handleRemoveCart,totalAmount,totalSave} = useContext(CartContext);
+    const { cart, handleRemoveCart, totalAmount, totalSave } = useContext(CartContext);
 
     return (
         <div className='CartsContainer'>
@@ -28,7 +28,10 @@ export default function Cart() {
             </div>
             <div className="TotalAmount">
                 <p className='save' >You will save &#8377;{totalSave} on this order </p>
-                <b className='totalAmount'>&#8377; {totalAmount} </b>
+                <div className='TotalPrice'>
+                    <p> &#8377;{totalAmount + totalSave} </p>
+                    <b className='totalAmount'>&#8377;{totalAmount} </b>
+                </div>
                 <button className='placeOrderBtn'>PLACE ORDER</button>
             </div>
         </div>

@@ -69,8 +69,8 @@ export default function SideBar() {
                             <p>Offer Zone</p>
                         </div>
                         <div className='SuperCoin'>
-                            <WorkIcon className='sideBarIcon' />
-                            <p>Sell on Flipkart</p>
+                            <Link id='seller' to="/becomeseller"> <WorkIcon className='sideBarIcon' /></Link>
+                            <Link id='seller' to="/becomeseller" ><p>Sell on Flipkart</p></Link>
                         </div>
                     </div>
                     <div className='SideBarBox2'>
