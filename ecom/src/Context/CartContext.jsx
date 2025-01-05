@@ -65,15 +65,12 @@ export default function CartProvider({ children }) {
     ])
 
     let handleAddCart = (product) => {
-        cart.forEach((cartItem)=>{
-            if(product.name!== cartItem.name){
-                setCart([...cart,product]);
-            }
-            else{
-                setCart(cart);
-            }
-        })
-    }
+        let isProductInCart = cart.some((cartItem) => cartItem.name === product.name);
+    
+        if (!isProductInCart) {
+            setCart([...cart, product]);
+        }
+    };
 
     let handleRemoveCart = (index) => {
         let newCarts=cart.filter((_,i)=>i!=index);

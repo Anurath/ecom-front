@@ -39,6 +39,7 @@ export default function BecomeSeller() {
                     <p>Access to The Big Billion Days & more</p>
                 </div>
             </div>
+            <div className='sellerStories'> <span className='storyHead'>Seller Success</span> Stories </div>
             <div className="SuccessStories">
                 <img id='successImg' src={success1} alt="" />
                 <div className='succesInfo'>

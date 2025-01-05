@@ -7,9 +7,9 @@
     position: fixed;
     top:0px;
     left:0px;
-    z-index:9999;
+    z-index:9999; 
 }
-
+ 
 .sellerLogo{
     margin-top:100px;
 }
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width:55%;
+    width:70%;
 }
 
 .sellerLogin button{
@@ -61,9 +61,31 @@
     display: none;
 }
 
+.ItemElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UpArrow{
+    display:none;
+}
+
+.DownArrow{
+    opacity: 0.5;
+}
+
 .ItemElement:hover{
+    .DownArrow{
+        display: none;
+    }
+    .UpArrow{
+        display: block;
+        opacity:0.5;
+    }
     cursor: pointer;
     .sellOnline{
+        top:72px;
         display: block;
         z-index: 2;
         display: flex;
@@ -84,6 +106,9 @@
 
 .ItemElement1{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Commission{
     display: none;
@@ -91,6 +116,13 @@
 
 
 .ItemElement1:hover{
+    .DownArrow{
+        display: none;
+    }
+    .UpArrow{
+        display: block;
+        opacity:0.5;
+    }
     p{
         cursor: pointer;
     }
@@ -98,6 +130,7 @@
         display: block;
         position: absolute;
         z-index: 2;
+        top: 54px;
         padding:10px;
         display: flex;
         flex-direction: column;
@@ -115,6 +148,9 @@
 
 .ItemElement2{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Grow{
@@ -122,11 +158,19 @@
 }
 
 .ItemElement2:hover{
+    .DownArrow{
+        display: none;
+    }
+    .UpArrow{
+        display: block;
+        opacity:0.5;
+    }
     p{
         cursor: pointer;
     }
     .Grow{
         position: absolute;
+        top: 55px;
         height:194px;
         width:200px;
         box-shadow: 0 0 10px 5px rgba(101, 99, 99, 0.3);
@@ -146,6 +190,9 @@
 
 .ItemElement3{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Learn{
@@ -153,10 +200,18 @@
 }
 
 .ItemElement3:hover{
+    .DownArrow{
+        display: none;
+    }
+    .UpArrow{
+        display: block;
+        opacity:0.5;
+    }
     p{
         cursor: pointer;
     }
     .Learn{
+        top:55px;
         display: block;
         position: absolute;
         height:70px;
@@ -211,4 +266,11 @@
     .ItemElement,.ItemElement1,.ItemElement2,.ItemElement3,.ShopsyMain{
         display: none;
     }
+}
+
+.NavHeader{
+    display: flex;
+    flex-wrap: wrap; /* Ensures text wraps to the next line if needed */
+    align-items: center;
+    justify-content: space-between;
 }

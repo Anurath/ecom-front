@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom'
 import SellerSideBar from './sellerSideBar'
 import sellerLogo from '../assets/seller/sellerLogo.svg'
 import './SellerNavBar.css'
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 export default function SellerNavBar() {
     return (
         <div className="sellerNavbar">
             <div className='sellerFirstDiv'>
-                <div><img src={sellerLogo} alt="" /></div>
+                <div><img src={sellerLogo} alt="" /></div> 
                 <Link className='sellerHome' to="/"><div className='NavHeader'>Home</div></Link>
                 <div className='ItemElement'>
                     <p className='NavHeader'>Sell Online</p>
@@ -18,6 +20,8 @@ export default function SellerNavBar() {
                         <p>Grow Faster</p>
                         <p>Seller App</p>
                     </div>
+                    <span className='DownArrow'><KeyboardArrowDownIcon /></span>
+                    <span className='UpArrow'> <KeyboardArrowUpIcon /> </span>
                 </div>
                 <div className='ItemElement1'>
                     <p className='NavHeader feeAndCom'>Fees and Commission</p>
@@ -26,6 +30,8 @@ export default function SellerNavBar() {
                         <p>Fee Type</p>
                         <p>Calculate Gross Margin</p>
                     </div>
+                    <span className='DownArrow'><KeyboardArrowDownIcon /></span>
+                    <span className='UpArrow'> <KeyboardArrowUpIcon /> </span>
                 </div>
                 <div className='ItemElement2'>
                     <p className='NavHeader'>Grow</p>
@@ -33,9 +39,11 @@ export default function SellerNavBar() {
                         <p>FAssured badge</p>
                         <p>Insights & Tools</p>
                         <p>Flipkart Ads</p>
-                        <p>Shopping Festivals</p>
+                        <p>Shopping Festivals</p> 
                         <p>Service Partners</p>
                     </div>
+                    <span className='DownArrow'><KeyboardArrowDownIcon /></span>
+                    <span className='UpArrow'> <KeyboardArrowUpIcon /> </span>
                 </div>
                 <div className='ItemElement3'>
                     <p className='NavHeader'>Learn</p>
@@ -43,6 +51,8 @@ export default function SellerNavBar() {
                         <p>FAQs</p>
                         <p>Seller Blogs</p>
                     </div>
+                    <span className='DownArrow'><KeyboardArrowDownIcon /></span>
+                    <span className='UpArrow'> <KeyboardArrowUpIcon /> </span>
                 </div>
                 <div className='ShopsyMain'>
                     <p className='NavHeader Shopsy'>Shopsy</p>

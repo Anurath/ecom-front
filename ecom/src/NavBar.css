@@ -84,4 +84,22 @@
     opacity:0.5;
     margin-left:2px;
     cursor: pointer;
+} 
+
+.CartCount{
+    height:18px;
+    width:18px;
+    background-color:#ff6161;
+    color:white;
+    border:1px solid black;
+    border-radius:7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-26px;
+    left:10px;
+}
+.cart{
+    position: relative;
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
 import icocFlipkart from '../assets/iconFlifkart.png';
 
@@ -15,7 +15,9 @@ import MarkunreadMailboxIcon from '@mui/icons-material/MarkunreadMailbox';
 import DiscountIcon from '@mui/icons-material/Discount';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { CartContext } from '../Context/CartContext';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+
 
 import ListIcon from '@mui/icons-material/List';
 import Close from "@mui/icons-material/Close";
@@ -23,10 +25,12 @@ import './SideBar.css'
 export default function SideBar() {
     let [isVisible, setIsvisible] = useState(false);
 
+    let {cart}=useContext(CartContext);
+
     let handleClass = () => {
         setIsvisible(!isVisible);
     }
-
+ 
     return (
         <>
             <div className={`SideBar ${isVisible ? "Visible" : ""}`}>
@@ -84,7 +88,7 @@ export default function SideBar() {
                         </div>
                         <div className='SuperCoin'>
                                 <Link className='sideBarCart' to="/cart"><ShoppingCartIcon className='sideBarIcon' /></Link>
-                                <Link className='sideBarCart' to='/cart'><p>My Cart</p></Link>
+                                <Link className='sideBarCart' to='/cart'><p>My Cart</p> {cart.length>0 ? <p> ({cart.length}) </p>:""} </Link>
                         </div>
                         <div className='SuperCoin'>
                                 <FavoriteIcon className='sideBarIcon' />

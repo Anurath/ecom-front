@@ -3,11 +3,14 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
+import { CartContext } from './Context/CartContext';
 
 import SideBar from './navBarPages/SideBar';
 import './NavBar.css'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react';
 export default function NavBar() {
+    let {cart}=useContext(CartContext);
     return (
         <div className="NavBar">
             <SideBar />
@@ -25,8 +28,7 @@ export default function NavBar() {
                 <Link className='NavBarLink' to='/login'><p>Login</p></Link>
             </div>
             <div className="cart">
-                <ShoppingCartIcon />
-                <Link className='NavBarLink' to='/cart'><p>Cart</p></Link>
+                <Link className='NavBarLink' to='/cart'><ShoppingCartIcon /> {cart.length>0 ?<p className='CartCount'> {cart.length} </p>:""} </Link>
             </div>
             <div className="seller">
                 <CardGiftcardIcon />
