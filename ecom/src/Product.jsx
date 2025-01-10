@@ -10,8 +10,8 @@ export default function Product({ productInfo }) {
     return (
         <>
             {
-                productInfo.map((product) => (
-                    <div className="Product">
+                productInfo.map((product,index) => (
+                    <div key={index} className="Product">
                         <img src={product.imgUrl} height={150} width={150} alt="" />
                         <div className="info">
                             <p> {product.name} </p>
