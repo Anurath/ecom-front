@@ -9,7 +9,7 @@ import './Cart.css';
 export default function Cart() {
     const { cart, handleRemoveCart, totalAmount, totalSave } = useContext(CartContext);
 
-    let LikeButton=(event)=>{
+    let LikeButton = (event) => {
         event.target.classList.toggle("LikeButton");
     }
 
@@ -20,15 +20,30 @@ export default function Cart() {
                 {
                     cart.map((cart, index) => (
                         <div key={index} className="singleCart">
-                            <img src={cart.imgUrl} height={100} width={100} alt="imageMissing" />
-                            <h3> {cart.name} </h3>
-                            <div className='priceBox'>
-                                <h3 className='DiscountPrice'>&#8377;{cart.price} </h3>
-                                <h4 className='OriginalPrice'>&#8377;{Math.floor([(cart.price) / (100 - cart.tagline)] * 100)} </h4>
-                                <h4 className='DiscountPerc'> {cart.tagline}% off </h4>
+                            <div className='ImageDiv'>
+                                <img src={cart.imgUrl} height={100} width={100} alt="imageMissing" />
+                                <label htmlFor="ItemCount"></label>
+                                <select name="ItemCount" id="ItemCount">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </select>
+                            </div>
+                            <div className="middleBox">
+                                <p> {cart.name} </p>
+                                <div className='priceBox'>
+                                    <h3 className='DiscountPrice'>&#8377;{cart.price} </h3>
+                                    <h4 className='OriginalPrice'>&#8377;{Math.floor([(cart.price) / (100 - cart.tagline)] * 100)} </h4>
+                                    <h4 className='DiscountPerc'> {cart.tagline}% off </h4>
+                                </div>
+                                <div className="Actions">
+                                    <p id='SaveForLeter'>SAVE FOR LETER</p>
+                                    <button id='RemoveBtn' className='cartRemoveButton' onClick={() => handleRemoveCart(index)}> REMOVE</button>
+                                </div>
                             </div>
                             <div className='CartIcons'>
-                                <button className='cartRemoveButton' onClick={() => handleRemoveCart(index)}><DeleteIcon /></button>
                                 <button className='LikeBtns' onClick={LikeButton}>
                                     <div className='fa-regular'> <FavoriteBorderIcon /> </div>
                                     <div className='fa-solid'> <FavoriteIcon /> </div>

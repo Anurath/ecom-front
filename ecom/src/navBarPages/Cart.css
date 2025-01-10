@@ -5,12 +5,77 @@
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 110px;
+    grid-auto-rows: 210px;
+}
+
+.ImageDiv{
+    display: flex; 
+}
+
+.middleBox{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    align-items: center;
+    p{
+        font-size: 16px;
+    }
+}
+
+
+
+
+.Actions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#SaveForLeter{
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+    margin-right: 5px;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    max-width:220px;
+}
+
+#RemoveBtn{
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media (max-width:360px) {
+    #RemoveBtn,#SaveForLeter{
+        font-size: 13px;
+    }
+}
+
+
+#ItemCount{
+    width:43px;
+    height:21px;
+    margin-top:13px;
+    margin-left: 10px;
+    option{
+        height:3px;
+    }
+}
+
+@media (max-width:450px) {
+    #ItemCount{
+        width:28px;
+        margin-right:5px;
+    }
 }
 
 .singleCart {
     display: flex;
-    height: 100px;
+    height: 200px;
     width: 94%;
     border: 1px solid black;
     margin-bottom: 2px;
@@ -61,7 +126,7 @@
     .Carts {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 110px;
+        grid-auto-rows: 210px;
         justify-items: center;
     align-items: center; 
     }
@@ -90,6 +155,7 @@
 
 .OriginalPrice{
     margin-left:5px;
+    font-size: 14px;
     text-decoration: line-through;
     opacity:0.5;
 }
@@ -139,6 +205,7 @@
 
 .LikeBtns{
     background-color: white;
+    margin-right:20px;
     border-radius:50%;
     width:25px;
     height:21px;
