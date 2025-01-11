@@ -6,8 +6,8 @@ export default function Footer({footerData}){
         <div className="Footer">
             <div className="UpperFooter">
             {
-                footerData.map((singleFooterData)=>(
-                    <FooterComponant footerItemHeader={singleFooterData.footerItemHeader} footerData={singleFooterData.footerItems}  />
+                footerData.map((singleFooterData,index)=>(
+                    <FooterComponant key={index} footerItemHeader={singleFooterData.footerItemHeader} footerData={singleFooterData.footerItems}  />
                 ))
             }
             </div>

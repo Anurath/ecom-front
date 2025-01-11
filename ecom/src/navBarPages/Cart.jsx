@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 import empty_cart from '../assets/empty_cart.png';
+import { Link } from 'react-router-dom'
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -60,7 +61,7 @@ export default function Cart() {
                         <p> &#8377;{totalAmount + totalSave} </p>
                         <b className='totalAmount'>&#8377;{totalAmount} </b>
                     </div>
-                    <button className='placeOrderBtn'>PLACE ORDER</button>
+                    <Link to="/login"><button className='placeOrderBtn'>PLACE ORDER</button></Link>
                 </div> :
                     <div className='EmptyCart'>
                         <img id='EmptyCartImg' src={empty_cart} alt="" />
